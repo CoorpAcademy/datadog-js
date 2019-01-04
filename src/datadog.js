@@ -7,8 +7,9 @@
     root.datadog = factory();
   }
 }(this, function () {
-
-  var _url = 'https://api.logmatic.io/v1/input/';
+  var _comUrl = 'https://http-intake.logs.datadoghq.com/v1/input/';
+  var _euUrl = 'https://http-intake.logs.datadoghq.eu/v1/input/';
+  var _url = _comUrl;
   var _metas = {};
   var _ipTrackingAttr;
   var _uaTrackingAttr;
@@ -110,8 +111,9 @@
   }
 
 
-  var init = function (key) {
-    _url = _url + key;
+  var init = function (key, eu) {
+    if (eu) _url = _euUrl + key
+    else _url = _url + key;
   };
 
   var forceEndpoint = function (url) {
@@ -291,7 +293,7 @@
 
     if (typeof (XDomainRequest) === 'undefined') {
       request.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
-
+      // §FIXME: update headers
       // IP tracking
       if (_ipTrackingAttr) {
         request.setRequestHeader('X-Logmatic-Add-IP', _ipTrackingAttr);
