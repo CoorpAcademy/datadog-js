@@ -7,7 +7,7 @@ module.exports = function (grunt) {
       },
       main: {
         files: {
-          'src/logmatic.min.js': [ 'src/logmatic.js' ]
+          'src/datadog.min.js': [ 'src/datadog.js' ]
         }
       }
     },

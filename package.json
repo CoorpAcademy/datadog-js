@@ -27,6 +27,7 @@
     "karma-jasmine": "^1.0.2"
   },
   "scripts": {
-    "grunt": "grunt"
+    "grunt": "grunt",
+    "build": "grunt"
   }
 }
