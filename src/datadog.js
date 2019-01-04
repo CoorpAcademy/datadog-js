@@ -4,7 +4,7 @@
   } else if (typeof exports === 'object') {
     module.exports = factory();
   } else {
-    root.logmatic = factory();
+    root.datadog = factory();
   }
 }(this, function () {
 
