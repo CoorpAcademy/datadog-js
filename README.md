@@ -1,7 +1,11 @@
-# logmatic-js
-*Link to the [Logmatic.io documentation](http://doc.logmatic.io/docs/javascript-clients-web-browsers)*
+# datadog-js
 
-Client-side JavaScript logging library for [Logmatic.io](https://logmatic.io).
+***:warning: README to be UPDATED with DATADOG MIGRATION :warning:***
+
+> Link to the [Logmatic.io documentation](http://doc.logmatic.io/docs/javascript-clients-web-browsers)
+
+Client-side JavaScript logging library for *Datadog* based on the [Logmatic.io](https://logmatic.io) one.
+
 
 ## Features
 
@@ -17,7 +21,7 @@ Client-side JavaScript logging library for [Logmatic.io](https://logmatic.io).
 
 ### Load and initialize logger
 
-You simply have to include the minified script and initialize it with your write API key that can be found on your *Logmatic.io* platform.
+You simply have to include the minified script and initialize it with your write API key that can be found on your *Datadog platform.
 
 ```html
 <html>
